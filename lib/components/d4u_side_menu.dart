@@ -1,6 +1,9 @@
 import 'package:drone4u_dashboard/constants.dart';
+import 'package:drone4u_dashboard/screens/orders_screen/d4u_order_screen.dart';
+import 'package:drone4u_dashboard/screens/settings_screen/d4u_setting_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../screens/main/main_screen.dart';
 import 'd4u_index.dart';
 
 class D4uSideMenu extends StatelessWidget {
@@ -27,34 +30,47 @@ class D4uSideMenu extends StatelessWidget {
               D4uDrawerList(
                 svgSrc: "assets/icons/menu_dashbord.svg",
                 text: "Dashboard",
+                press: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const MainScreen();
+                      },
+                    ),
+                    ModalRoute.withName('/dashboard'),
+                  );
+                },
               ),
               D4uDrawerList(
                 svgSrc: "assets/icons/menu_tran.svg",
-                text: "Transaction",
-              ),
-              D4uDrawerList(
-                svgSrc: "assets/icons/menu_task.svg",
-                text: "Task",
-              ),
-              D4uDrawerList(
-                svgSrc: "assets/icons/menu_doc.svg",
-                text: "Documents",
-              ),
-              D4uDrawerList(
-                svgSrc: "assets/icons/menu_store.svg",
-                text: "Store",
-              ),
-              D4uDrawerList(
-                svgSrc: "assets/icons/menu_notification.svg",
-                text: "Notification",
-              ),
-              D4uDrawerList(
-                svgSrc: "assets/icons/menu_profile.svg",
-                text: "Profile",
+                text: "Orders",
+                press: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const D4uOrdersScreen();
+                      },
+                    ),
+                    ModalRoute.withName('/dashboard'),
+                  );
+                },
               ),
               D4uDrawerList(
                 svgSrc: "assets/icons/menu_setting.svg",
                 text: "Settings",
+                press: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const D4uSettingScreen();
+                      },
+                    ),
+                    ModalRoute.withName('/dashboard'),
+                  );
+                },
               ),
             ],
           ),

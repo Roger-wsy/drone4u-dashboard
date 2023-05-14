@@ -47,6 +47,7 @@ class D4uPadding {
   static const containerCenter2 = EdgeInsets.fromLTRB(8, 4, 8, 4);
   static const containerCenter3 = EdgeInsets.fromLTRB(16, 0, 16, 8);
   static const containerCenter4 = EdgeInsets.fromLTRB(16, 8, 16, 0);
+  static const containerCenter5 = EdgeInsets.fromLTRB(16, 4, 16, 4);
 
   static const zero = EdgeInsets.zero;
 }

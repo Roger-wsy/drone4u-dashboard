@@ -19,19 +19,19 @@ class Header extends StatelessWidget {
               text: "Dashboard",
               textStyle: Theme.of(context).textTheme.titleLarge,
             ),
-            const Spacer(),
-            if (Responsive.isDesktop(context))
-              const Expanded(
-                child: D4uSearchField(),
-              ),
-            const D4uProfileCard(),
+            // const Spacer(),
+            // if (Responsive.isDesktop(context))
+            //   const Expanded(
+            //     child: D4uSearchField(),
+            //   ),
+            // const D4uProfileCard(),
           ],
         ),
-        if (!Responsive.isDesktop(context))
-          Container(
-            margin: D4uPadding.v16,
-            child: const D4uSearchField(),
-          ),
+        // if (!Responsive.isDesktop(context))
+        //   Container(
+        //     margin: D4uPadding.v16,
+        //     child: const D4uSearchField(),
+        //   ),
       ],
     );
   }

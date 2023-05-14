@@ -11,3 +11,6 @@ export 'd4u_progress_line.dart';
 export 'd4u_recent_list.dart';
 export 'd4u_file_info_grid_view.dart';
 export 'd4u_storage_details_section.dart';
+export 'd4u_background.dart';
+export 'd4u_sign_up_form.dart';
+export 'd4u_sign_up_top_image.dart';

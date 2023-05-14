@@ -21,9 +21,7 @@ class D4uSearchField extends StatelessWidget {
         ),
         //suffixIcon: Container(child: Icon(Icons.search)),
         suffixIcon: GestureDetector(
-          onTap: () {
-            print('${MediaQuery.of(context).size.width}');
-          },
+          onTap: () {},
           child: Padding(
             padding: const EdgeInsets.only(right: 4.0),
             child: Container(
